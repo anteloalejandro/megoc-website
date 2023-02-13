@@ -22,6 +22,7 @@ toc: true
 - Detalles del estilo de las secciones, como el formato de los `h2`, `h3`...
 - Poder cambiar el idioma de la página.
 - Hacer que el se escoja automáticamente según la configuración del usuario en su dispositivo, y poder guardar dicha configuración.
+- Pequeñas animaciones para hacer más evidente que se está haciendo y en que sección de la página se está.
 
 # Dificultadas encontradas durante el desarrollo
 

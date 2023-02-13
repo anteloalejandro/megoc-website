@@ -335,7 +335,7 @@ main section h2 {
   font-family: Gabriela;
   font-size: 2.3rem;
 }
-main section :is(button, .button) {
+main section button, main section .button {
   width: 100%;
   font-size: 1.2rem;
 }
@@ -408,6 +408,7 @@ footer {
   --btn-fg: black;
 }
 
+/**VISTA PC/TABLET**/
 @media screen and (min-width: 768px) {
   main {
     grid-template-columns: repeat(12, 1fr);
