@@ -355,6 +355,10 @@ main section#qui-som #redes p {
   padding-bottom: 0;
   text-transform: uppercase;
 }
+main section#qui-som #redes i.fa-square-facebook, main section#qui-som #redes i.fa-instagram {
+  display: block;
+  margin: auto;
+}
 main section#proximament .calendario {
   display: flex;
   flex-flow: row wrap;
