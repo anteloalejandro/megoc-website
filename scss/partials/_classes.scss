@@ -1,0 +1,95 @@
+.snap {
+  scroll-snap-align: start;
+}
+
+.clear-input {
+  border: none;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: none;
+  }
+}
+
+.tema-btn i {
+  display: block;
+  height: 100%;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/moon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .light & {
+      background-image: url('../img/sun.svg');
+    }
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: calc(1rem + 3vw) 1fr calc(1rem + 3vw);
+  margin-bottom: 1rem;
+
+  .imgs {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+
+    .img-wrapper {
+      scroll-snap-align: start;
+      background-color: black;
+      display: grid;
+      place-items: center;
+      max-height: 100%;
+      max-width: 100%;
+
+      img {
+        text-align: center;
+        max-height: 80vmin;
+        max-width: 100%;
+      }
+    }
+  }
+  .left-arrow, .right-arrow {
+    @extend .clear-input;
+    height: 100%;
+    margin: 0;
+    border: unset;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: box-shadow 150ms ease;
+    z-index: 1;
+
+    &.left-arrow {
+      border-radius: 1rem 0 0 1rem;
+      &:hover {
+        box-shadow: 1rem 0px 10px -10px rgba(80,80,80, 0.9);
+      }
+    }
+
+    &.right-arrow {
+      border-radius: 0 1rem 1rem 0;
+      &:hover {
+        box-shadow: -1rem 0px 10px -10px rgba(80,80,80, 0.9);
+      }
+    }
+  }
+}
+
