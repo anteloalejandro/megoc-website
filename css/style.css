@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(../fontawesome/css/all.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Gabriela&family=Paprika&family=Pridi:wght@400;700&display=swap");
 @font-face {
   font-family: tex-gyre-adventor;
   src: url(../fonts/texgyreadventor-regular.otf);
@@ -24,6 +23,10 @@
   src: url(../fonts/texgyreadventor-bolditalic.otf);
   font-style: italic;
   font-weight: bold;
+}
+@font-face {
+  font-family: Gabriela;
+  src: url(../fonts/Gabriela-Regular.ttf);
 }
 * {
   padding: 0;
@@ -201,7 +204,6 @@ button:is(:active),
   box-shadow: -1rem 0px 10px -10px rgba(80, 80, 80, 0.9);
 }
 
-/* Paprika, Courgette, Gabriela, Pridi */
 :root {
   --header-height: 3rem;
   scroll-padding-top: var(--header-height);
