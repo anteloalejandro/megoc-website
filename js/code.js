@@ -59,3 +59,10 @@ const imgs = document.querySelectorAll('img')
 for (i of imgs) {
   i.draggable = false
 }
+
+document.querySelectorAll("main>section").forEach(e => {
+  e.classList.add('wow', 'slideInLeft')
+  e.dataset.wowDuration = "500ms"
+})
+
+new WOW().init()
