@@ -10,7 +10,7 @@ fetch('translations.json')
 
 function getDefault(item, sel = '') {
   if (!(item instanceof Object)) {
-    translations.val[sel] = document.querySelector(sel).textContent
+    translations.val[sel] = document.querySelector(sel).innerHTML
     return
   }
   Object.keys(item).forEach(k => {
@@ -20,9 +20,10 @@ function getDefault(item, sel = '') {
 
 function apply(item, sel = '') {
   if (!(item instanceof Object)) {
+    console.log(item, sel)
     document.querySelectorAll(sel)
       .forEach(e => {
-        e.textContent = item
+        e.innerHTML = item
       })
     return
   }

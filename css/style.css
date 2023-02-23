@@ -203,15 +203,26 @@ button:is(:active),
   box-shadow: -1rem 0px 10px -10px rgba(80, 80, 80, 0.9);
 }
 
-body.show-form main {
-  opacity: 0.5;
+#overlay {
+  z-index: 15;
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  display: none;
   transition: opacity 200ms ease;
+  background-color: black;
+}
+
+body.show-form #overlay {
+  display: unset;
+  opacity: 0.8;
 }
 body.show-form main > * {
   cursor: default !important;
 }
 
 form#form-insc {
+  z-index: 20;
   font-size: 120%;
   background-color: var(--bg-1);
   color: var(--fg);
@@ -449,11 +460,13 @@ main section#cantar ul li {
   list-style-type: square;
   margin-left: 1rem;
 }
+main section#trobans {
+  text-align: center;
+}
 main section#trobans #lugares {
   padding-inline: 0.5rem;
 }
 main section#trobans #lugares > * {
-  text-align: center;
   margin: 0 auto 0.5rem;
 }
 main section#trobans #lugares > * h3 {

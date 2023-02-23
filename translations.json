@@ -9,7 +9,9 @@
     },
     "#qui-som": {
       "h2": "Quiénes Somos",
-      "[class~='fa-location-dot'] + span": "ENCUÉNTRANOS"
+      "[class~='fa-location-dot'] + span": "ENCUÉNTRANOS",
+      "> p:nth-of-type(1)": "El coro de música moderna i gòspel nace a finales del año 2015, como una sección más, dentro de la Asociación Espacio de Estudios i Práctica Musical de Oliva, con el abjetivo de interpretar diferentes estilos musicales, como el Góspel, Funky, Soul, Rock, etcétera, dando así otra opción musical a los diferentes grupos corales existentes en la localidad.",
+      "> p:nth-of-type(2)": "En la actualidad, el coro cuenta con más de 50 cantantes i un grupo musical formado por: guitarra eléctrica/acústica, batería, bajo eléctrico y teclado. En la dirección se encuentra Fernando Climent. Con su trabajo y dedicación consigue que este proyecto sea una realidad y, sobretodo, que disfrutemos y vibremos en lo alto del escenario."
     },
     "#galeria": {
       "h2": "Galería",
@@ -21,10 +23,24 @@
     },
     "#cantar": {
       "h2": "¿Te gusta cantar?",
-      ".button": "Envíanos un correo para inscribirte"
+      "> p:first-of-type": "MEGóC acepta participantes dos veces al año, antes de ciertos eventos importantes.",
+      "> p:nth-of-type(2)": "Para formar parte de MEGòC tienes que enviar-nos por correo electrónico tu educiación musical y hablarnos un poco sobre ti y sobre qué esperas ganar de esta experiencia.",
+      "> p:nth-of-type(3) strong": "Fechas de inscripción",
+      "ul": {
+        "li:first-of-type": "Del día X de Y al A de B",
+        "li:nth-of-type(2)": "Del día X de Y al A de B"
+      },
+      "#button-insc": "Envíanos un correo para inscribirte"
     },
     "#trobans": {
-      "h2": "Encuéntranos"
+      "h2": "Encuéntranos",
+      "h2 + p": "Puedes encontrarnos ensayando en estos lugares"
+    },
+    "footer": {
+      "h3": "Política de privacidad",
+      "p:first-of-type strong": "MEGòC se preocupa por tu privacidad.",
+      "p:nth-of-type(2)": "No usamos <em>cookies</em>, pero nos comprometemos a pedirte permiso explícito de forma no intrusiva si lo hacemos en un futuro.",
+      "button#close": "De acuerdo"
     }
   },
 
@@ -38,7 +54,9 @@
     },
     "#qui-som": {
       "h2": "About Us",
-      "[class~='fa-location-dot'] + span": "ENCUÉNTRANOS"
+      "[class~='fa-location-dot'] + span": "FIND US",
+      "> p:nth-of-type(1)": "The modern and gospel music choir was founded in late 2015, as a new section within the <em>Associació Espai d’Estudis i Pràctica Musical d’Oliva</em>. It objective is to perform different musical styles, sucha as: Gospel, Funky, Soul, Rock, and more, thus offering a new musical alternative to the different choral groups in the area.",
+      "> p:nth-of-type(2)": "Currently, the coir has over 50 singers and a musical group consisting of electric/acoustic guitar, drums, electric bass, and keyboard. Fernando Climent is the director of the group, and with his work and dedication, he has made this proyect a reality and, most importantly, helps us enjoy and vibe on stage."
     },
     "#galeria": {
       "h2": "Gallery",
@@ -50,10 +68,24 @@
     },
     "#cantar": {
       "h2": "Do You Like Singing?",
-      ".button": "Send us an e-mail to sign up"
+      "> p:first-of-type": "MEGòC accepts new members twice a year, before certain important events",
+      "> p:nth-of-type(2)": "To be a part of MEGòC you must send as your musical education and some info about you and what you want to obtain from this experience in an e-mail.",
+      "> p:nth-of-type(3) strong": "Registration dates",
+      "ul": {
+        "li:first-of-type": "From the X of Y until the A of B",
+        "li:nth-of-type(2)": "From the X of Y until the A of B"
+      },
+      "#button-insc": "Send us an e-mail to sign up"
     },
     "#trobans": {
-      "h2": "Find us"
+      "h2": "Find us",
+      "h2 + p": "You can find us practicing in these places"
+    },
+    "footer": {
+      "h3": "Privacy policy",
+      "p:first-of-type strong": "MEGòC cares about your privacy",
+      "p:nth-of-type(2)": "We don't yse cookies, but we commit to ask you for your express permission in a non-intrusive way if we do it some day in the future.",
+      "button#close": "Okay"
     }
   }
 }
