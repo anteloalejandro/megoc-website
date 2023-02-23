@@ -1,0 +1,11 @@
+{
+  "esp": {
+    ".nav-links": {
+      "li:nth-of-type(1) > a": "QUIÉNES SOMOS",
+      "li:nth-of-type(2) > a": "GALERÍA",
+      "li:nth-of-type(3) > a": "PRÓXIMAMENTE",
+      "li:nth-of-type(4) > a": "¿TE GUSTA CANTAR?",
+      "li:nth-of-type(5) > a": "ENCUÉNTRANOS"
+    }
+  }
+}
