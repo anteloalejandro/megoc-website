@@ -203,6 +203,65 @@ button:is(:active),
   box-shadow: -1rem 0px 10px -10px rgba(80, 80, 80, 0.9);
 }
 
+body.show-form main {
+  opacity: 0.5;
+  transition: opacity 200ms ease;
+}
+body.show-form main > * {
+  cursor: default !important;
+}
+
+form#form-insc {
+  font-size: 120%;
+  background-color: var(--bg-1);
+  color: var(--fg);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 80vw;
+  width: 500px;
+  padding: 1rem 2rem;
+  transform: translate(-50%, -50%);
+  border: 0.2rem solid var(--hl);
+  border-radius: 0.5rem;
+  display: none;
+}
+form#form-insc label {
+  font-weight: bold;
+  font-size: 110%;
+}
+form#form-insc input, form#form-insc textarea, form#form-insc button, form#form-insc .button {
+  font-size: inherit;
+  border: 2px solid var(--hl);
+  border-radius: 0.25rem;
+  color: inherit;
+  background-color: var(--bg-3);
+  padding: 0.5rem;
+}
+form#form-insc input:hover, form#form-insc input:active, form#form-insc textarea:hover, form#form-insc textarea:active, form#form-insc button:hover, form#form-insc button:active, form#form-insc .button:hover, form#form-insc .button:active {
+  background-color: var(--bg-4);
+}
+form#form-insc input:hover[type=submit], form#form-insc input:active[type=submit], form#form-insc textarea:hover[type=submit], form#form-insc textarea:active[type=submit], form#form-insc button:hover[type=submit], form#form-insc button:active[type=submit], form#form-insc .button:hover[type=submit], form#form-insc .button:active[type=submit] {
+  cursor: pointer;
+}
+form#form-insc textarea {
+  height: 20ch;
+}
+form#form-insc .form-group {
+  margin-bottom: 1rem;
+  margin-inline: auto;
+}
+form#form-insc .form-group > * {
+  display: block;
+  width: 100%;
+}
+form#form-insc .button-group > * {
+  width: 100%;
+}
+.show-form form#form-insc {
+  display: unset;
+}
+
 :root {
   --header-height: 3rem;
   scroll-padding-top: var(--header-height);

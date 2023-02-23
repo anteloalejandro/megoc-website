@@ -168,7 +168,7 @@
             <li>Del dia X de Y al A de B</li>
           </ul>
         </div>
-        <a href="#" class="button">Envia'ns un correu per a inscribir-te</a>
+        <a href="#" id="button-insc" class="button">Envia'ns un correu per a inscribir-te</a>
       </section>
 
       <section id="trobans">
@@ -195,5 +195,26 @@
       </p>
       <button id="close">D'acord</button>
     </footer>
+    <form id="form-insc" action="" method="post">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required="true">
+      </div>
+      <div class="form-group">
+        <label for="email">Correu Electrónic</label>
+        <input type="email" id="email" name="email" required="true">
+      </div>
+      <div class="form-group">
+        <label for="asumpte">Asumpte</label>
+        <input type="text" id="asumpte" name="asumpte" required="true">
+      </div>
+      <div class="form-group">
+        <label for="cos">Cos</label>
+        <textarea id="cos" name="cos" required="true"></textarea>
+      </div>
+      <div class="button-group">
+        <input type="submit" value="Envia">
+      </div>
+    </form>
   </body>
 </html>

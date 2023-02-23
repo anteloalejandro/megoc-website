@@ -60,6 +60,29 @@ for (i of imgs) {
   i.draggable = false
 }
 
+const langBtns = document.getElementsByClassName("idioma")
+for (const b of langBtns) {
+  b.onchange = ev => {
+    for (const e of langBtns)
+      e.value = b.value
+    translate(b.value)
+  }
+}
+
+const inscBtn = document.getElementById('button-insc')
+inscBtn.onclick = ev => {
+  ev.preventDefault()
+  document.body.classList.add('show-form')
+  document.body.onclick = ev => {
+
+    if ([...document.querySelectorAll("form, form *")].includes(ev.target) || ev.target === inscBtn)
+      return
+
+    document.body.classList.remove('show-form')
+    document.body.onclick = () => {}
+  }
+}
+
 document.querySelectorAll("main>section:not(:first-of-type)")
   .forEach(e => {
     let animation = 'slideInLeft'
@@ -70,14 +93,4 @@ document.querySelectorAll("main>section:not(:first-of-type)")
   })
 
 new WOW({live: false, offset: 200}).init()
-
-const langBtns = document.getElementsByClassName("idioma")
-const def = document.body.children
-for (const b of langBtns) {
-  b.onchange = ev => {
-    for (const e of langBtns)
-      e.value = b.value
-    translate(b.value)
-  }
-}
 
