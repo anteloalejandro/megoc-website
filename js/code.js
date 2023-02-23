@@ -60,9 +60,13 @@ for (i of imgs) {
   i.draggable = false
 }
 
-document.querySelectorAll("main>section").forEach(e => {
-  e.classList.add('wow', 'slideInLeft')
-  e.dataset.wowDuration = "500ms"
-})
+document.querySelectorAll("main>section:not(:first-of-type)")
+  .forEach(e => {
+    let animation = 'slideInLeft'
+    if (e.id == 'qui-som')
+      animation = 'fadeIn'
+    e.classList.add('wow', animation)
+    e.dataset.wowDuration = "500ms"
+  })
 
-new WOW().init()
+new WOW({live: false, offset: 200}).init()
