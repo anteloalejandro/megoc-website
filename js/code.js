@@ -70,3 +70,14 @@ document.querySelectorAll("main>section:not(:first-of-type)")
   })
 
 new WOW({live: false, offset: 200}).init()
+
+const langBtns = document.getElementsByClassName("idioma")
+const def = document.body.children
+for (const b of langBtns) {
+  b.onchange = ev => {
+    for (const e of langBtns)
+      e.value = b.value
+    translate(b.value)
+  }
+}
+

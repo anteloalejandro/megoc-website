@@ -1,6 +1,23 @@
-var currentTranslation = 0
+let translations = {}
+fetch('translations.json')
+  .then(response => response.json())
+  .then(data => {
+    translations = data
+    translations.val = {}
+    getDefault(translations.esp)
+  })
 
-/**@params {Object} sel*/
+
+function getDefault(item, sel = '') {
+  if (!(item instanceof Object)) {
+    translations.val[sel] = document.querySelector(sel).textContent
+    return
+  }
+  Object.keys(item).forEach(k => {
+    getDefault(item[k], sel+' '+k)
+  })
+}
+
 function apply(item, sel = '') {
   if (!(item instanceof Object)) {
     document.querySelectorAll(sel)
@@ -14,13 +31,7 @@ function apply(item, sel = '') {
     apply(item[k], sel+' '+k)
   })
 }
-var json;
-function translate(lang) {
-fetch('translations.json')
-  .then(response => response.json())
-  .then(data => {
-    apply(data[lang])
-  })
-}
 
-translate("esp")
+function translate(lang) {
+    apply(translations[lang])
+}

@@ -6,6 +6,54 @@
       "li:nth-of-type(3) > a": "PRÓXIMAMENTE",
       "li:nth-of-type(4) > a": "¿TE GUSTA CANTAR?",
       "li:nth-of-type(5) > a": "ENCUÉNTRANOS"
+    },
+    "#qui-som": {
+      "h2": "Quiénes Somos",
+      "[class~='fa-location-dot'] + span": "ENCUÉNTRANOS"
+    },
+    "#galeria": {
+      "h2": "Galería",
+      "p:first-of-type": "¿Te gusta cantar? ¿Quieres participar en MEGòC? ¡Inscríbete!",
+      ".button": "Inscribirse"
+    },
+    "#proximament": {
+      "h2": "Próximamente"
+    },
+    "#cantar": {
+      "h2": "¿Te gusta cantar?",
+      ".button": "Envíanos un correo para inscribirte"
+    },
+    "#trobans": {
+      "h2": "Encuéntranos"
+    }
+  },
+
+  "eng": {
+    ".nav-links": {
+      "li:nth-of-type(1) > a": "ABOUT US",
+      "li:nth-of-type(2) > a": "GALLERY",
+      "li:nth-of-type(3) > a": "COMING SOON",
+      "li:nth-of-type(4) > a": "DO YOU LIKE SINGING?",
+      "li:nth-of-type(5) > a": "FIND US"
+    },
+    "#qui-som": {
+      "h2": "About Us",
+      "[class~='fa-location-dot'] + span": "ENCUÉNTRANOS"
+    },
+    "#galeria": {
+      "h2": "Gallery",
+      "p:first-of-type": "Do you like singing? Do you want to join MEGòC? Sign up!",
+      ".button": "Sign up"
+    },
+    "#proximament": {
+      "h2": "Coming Soon"
+    },
+    "#cantar": {
+      "h2": "Do You Like Singing?",
+      ".button": "Send us an e-mail to sign up"
+    },
+    "#trobans": {
+      "h2": "Find us"
     }
   }
 }
