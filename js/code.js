@@ -61,10 +61,16 @@ for (i of imgs) {
 }
 
 const langBtns = document.getElementsByClassName("idioma")
+if (localStorage.getItem('lang')) {
+  translate(localStorage.getItem('lang'))
+  for (const b of langBtns)
+    b.value = localStorage.getItem('lang')
+}
 for (const b of langBtns) {
   b.onchange = ev => {
     for (const e of langBtns)
       e.value = b.value
+    localStorage.setItem('lang', b.value)
     translate(b.value)
   }
 }
@@ -82,6 +88,14 @@ inscBtn.onclick = ev => {
     document.body.onclick = () => {}
   }
 }
+
+const footer = document.querySelector('footer')
+footer.querySelector('#close').onclick = () => {
+  localStorage.setItem('cookies-ack', true)
+  footer.style.display = 'none'
+}
+if (localStorage.getItem('cookies-ack'))
+  footer.style.display = 'none'
 
 document.querySelectorAll("main>section:not(:first-of-type)")
   .forEach(e => {

@@ -34,5 +34,10 @@ function apply(item, sel = '') {
 }
 
 function translate(lang) {
+  var tmp = setInterval(() => {
+    if (!translations.val) return
+
     apply(translations[lang])
+    clearInterval(tmp)
+  }, 1)
 }

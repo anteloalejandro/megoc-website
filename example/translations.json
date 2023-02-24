@@ -1,0 +1,33 @@
+{
+  "esp": {
+    ".nav-links": {
+      "li:nth-of-type(1) > a": "QUIÉNES SOMOS",
+      "li:nth-of-type(2) > a": "GALERÍA",
+      "li:nth-of-type(3) > a": "PRÓXIMAMENTE",
+      "li:nth-of-type(4) > a": "¿TE GUSTA CANTAR?",
+      "li:nth-of-type(5) > a": "ENCUÉNTRANOS"
+    },
+    "footer": {
+      "h3": "Política de privacidad",
+      "p:first-of-type strong": "MEGòC se preocupa por tu privacidad.",
+      "p:nth-of-type(2)": "No usamos <em>cookies</em>, pero nos comprometemos a pedirte permiso explícito de forma no intrusiva si lo hacemos en un futuro.",
+      "button#close": "De acuerdo"
+    }
+  },
+
+  "eng": {
+    ".nav-links": {
+      "li:nth-of-type(1) > a": "ABOUT US",
+      "li:nth-of-type(2) > a": "GALLERY",
+      "li:nth-of-type(3) > a": "COMING SOON",
+      "li:nth-of-type(4) > a": "DO YOU LIKE SINGING?",
+      "li:nth-of-type(5) > a": "FIND US"
+    },
+    "footer": {
+      "h3": "Privacy policy",
+      "p:first-of-type strong": "MEGòC cares about your privacy",
+      "p:nth-of-type(2)": "We don't yse cookies, but we commit to ask you for your express permission in a non-intrusive way if we do it some day in the future.",
+      "button#close": "Okay"
+    }
+  }
+}

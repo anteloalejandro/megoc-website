@@ -41,6 +41,13 @@
       "p:first-of-type strong": "MEGòC se preocupa por tu privacidad.",
       "p:nth-of-type(2)": "No usamos <em>cookies</em>, pero nos comprometemos a pedirte permiso explícito de forma no intrusiva si lo hacemos en un futuro.",
       "button#close": "De acuerdo"
+    },
+    "form#form-insc": {
+      ".form-group:nth-of-type(1) label": "Nombre",
+      ".form-group:nth-of-type(2) label": "Correo electrónico",
+      ".form-group:nth-of-type(3) label": "Asunto",
+      ".form-group:nth-of-type(4) label": "Cuerpo",
+      "button[type='submit']": "Envía"
     }
   },
 
@@ -86,6 +93,13 @@
       "p:first-of-type strong": "MEGòC cares about your privacy",
       "p:nth-of-type(2)": "We don't yse cookies, but we commit to ask you for your express permission in a non-intrusive way if we do it some day in the future.",
       "button#close": "Okay"
+    },
+    "form#form-insc": {
+      ".form-group:nth-of-type(1) label": "Name",
+      ".form-group:nth-of-type(2) label": "E-mail",
+      ".form-group:nth-of-type(3) label": "Subject",
+      ".form-group:nth-of-type(4) label": "Body",
+      "button[type='submit']": "Submit"
     }
   }
 }

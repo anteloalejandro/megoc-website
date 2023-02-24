@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: tex-gyre-adventor;
   src: url(../fonts/texgyreadventor-regular.otf);
@@ -205,76 +204,6 @@ button:is(:active),
   box-shadow: -1rem 0px 10px -10px rgba(80, 80, 80, 0.9);
 }
 
-#overlay {
-  z-index: 15;
-  position: fixed;
-  inset: 0;
-  opacity: 0;
-  display: none;
-  transition: opacity 200ms ease;
-  background-color: black;
-}
-
-body.show-form #overlay {
-  display: unset;
-  opacity: 0.8;
-}
-body.show-form main > * {
-  cursor: default !important;
-}
-
-form#form-insc {
-  z-index: 20;
-  font-size: 120%;
-  background-color: var(--bg-1);
-  color: var(--fg);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  max-width: 80vw;
-  width: 500px;
-  padding: 1rem 2rem;
-  transform: translate(-50%, -50%);
-  border: 0.2rem solid var(--hl);
-  border-radius: 0.5rem;
-  display: none;
-}
-form#form-insc label {
-  font-weight: bold;
-  font-size: 110%;
-}
-form#form-insc input, form#form-insc textarea, form#form-insc button, form#form-insc .button {
-  font-size: inherit;
-  border: 2px solid var(--hl);
-  border-radius: 0.25rem;
-  color: inherit;
-  background-color: var(--bg-3);
-  padding: 0.5rem;
-}
-form#form-insc input:hover, form#form-insc input:active, form#form-insc textarea:hover, form#form-insc textarea:active, form#form-insc button:hover, form#form-insc button:active, form#form-insc .button:hover, form#form-insc .button:active {
-  background-color: var(--bg-4);
-}
-form#form-insc input:hover[type=submit], form#form-insc input:active[type=submit], form#form-insc textarea:hover[type=submit], form#form-insc textarea:active[type=submit], form#form-insc button:hover[type=submit], form#form-insc button:active[type=submit], form#form-insc .button:hover[type=submit], form#form-insc .button:active[type=submit] {
-  cursor: pointer;
-}
-form#form-insc textarea {
-  height: 20ch;
-}
-form#form-insc .form-group {
-  margin-bottom: 1rem;
-  margin-inline: auto;
-}
-form#form-insc .form-group > * {
-  display: block;
-  width: 100%;
-}
-form#form-insc .button-group > * {
-  width: 100%;
-}
-.show-form form#form-insc {
-  display: unset;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -425,182 +354,33 @@ footer {
   --btn-fg: black;
 }
 
-/**VERSIÓN MÓVIL**/
-body {
-  display: grid;
-  min-height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
-
-main {
-  display: grid;
-  gap: 1rem;
-}
-main section:first-of-type {
-  text-align: center;
-}
-main section {
-  padding: 1rem;
-  scroll-snap-align: start;
-}
-main section:first-of-type img {
-  max-width: 100%;
-}
-main section:first-of-type h1 {
-  color: var(--megoc-gold);
-  font-family: tex-gyre-adventor;
-}
-main section:not(:first-of-type) {
-  background-color: var(--bg-1);
-  border-left: 0.2rem solid var(--megoc-gold);
-}
-.light main section:not(:first-of-type) {
-  border-left-color: var(--megoc-silver);
-}
-main section h2 {
-  text-align: center;
-  font-family: Gabriela;
-  font-size: 2.3rem;
-}
-main section button, main section .button {
-  width: 100%;
+:root {
+  background-color: var(--bg-2);
   font-size: 1.2rem;
 }
-main section#qui-som #redes {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  text-align: center;
-  margin-top: 0.5rem;
-  justify-items: center;
-}
-main section#qui-som #redes > :first-child {
-  grid-column: 1/-1;
-}
-main section#qui-som #redes p {
-  padding-bottom: 0;
-  text-transform: uppercase;
-}
-main section#qui-som #redes i.fa-square-facebook, main section#qui-som #redes i.fa-instagram {
-  display: block;
-  margin: auto;
-}
-main section#proximament .calendario {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1rem;
-  justify-content: space-around;
-}
-main section#proximament .calendario .hoja {
-  flex: 160px 1 0;
-  max-width: 200px;
-  min-height: 150px;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-main section#proximament .calendario h3 {
-  text-align: center;
-  padding-block: 0.6em 0.3em;
-  background-color: var(--red);
-  color: white;
-}
-main section#proximament .calendario h3 strong {
-  font-size: 150%;
-}
-main section#proximament .calendario p {
-  background-color: white;
-  color: black;
-  font-size: 90%;
-  padding: 0.2em 0.5em;
-}
-main section#cantar ul li {
-  list-style-type: square;
-  margin-left: 1rem;
-}
-main section#trobans {
-  text-align: center;
-}
-main section#trobans #lugares {
-  padding-inline: 0.5rem;
-}
-main section#trobans #lugares > * {
-  margin: 0 auto 0.5rem;
-}
-main section#trobans #lugares > * h3 {
-  font-weight: lighter;
-  font-size: 1.4rem;
-}
-main section#trobans #lugares > * img {
-  max-width: 100%;
-  max-height: 300px;
+
+body main {
+  max-width: 700px;
+  margin-inline: auto;
+  background-color: var(--bg-1);
+  padding: 1rem;
 }
 
-/**VISTA PC/TABLET**/
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: unset;
-    grid-auto-flow: row;
-    font-size: 20px;
-    padding: 0.5rem;
-  }
-  main > * {
-    grid-column: 1/-1;
-    border-radius: 0.3rem;
-  }
-  main section:first-of-type {
-    grid-column: 1/5;
-    align-self: center;
-  }
-  main section#qui-som {
-    grid-column: 5/-1;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: unset;
-  }
-  main section#qui-som #redes {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    align-items: center;
-  }
-  main section#qui-som #redes > :first-child {
-    grid-column: unset;
-  }
-  main section#qui-som #redes i {
-    display: block;
-    margin: auto;
-  }
-  main section#cantar {
-    grid-column: 1/6;
-  }
-  main section#trobans {
-    grid-column: 6/-1;
-    text-align: center;
-  }
-  main section#trobans #lugares > * {
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    align-items: center;
-    text-align: left;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--hl);
+  font-family: Gabriela;
 }
-/**VISTA PC**/
-@media screen and (min-width: 992px) {
-  main section#cantar {
-    grid-column: 1/5;
-  }
-  main section#trobans {
-    grid-column: 5/-1;
-  }
-  main section#trobans #lugares {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
-  main section#trobans #lugares > * {
-    grid-template-columns: 1fr;
-  }
+
+h2 {
+  font-family: tex-gyre-adventor;
+  color: var(--hl);
+}
+
+.media {
+  text-align: center;
+}
+.media > * {
+  max-width: 100%;
 }

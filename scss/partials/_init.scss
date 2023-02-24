@@ -28,6 +28,8 @@
   font-size: 18px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 
+  --header-height: 3rem;
+  scroll-padding-top: var(--header-height);
   scroll-behavior: smooth;
   &.light {
   --fg: #2E2E2E;
