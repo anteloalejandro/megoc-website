@@ -515,6 +515,10 @@ main section#proximament .calendario p {
   font-size: 90%;
   padding: 0.2em 0.5em;
 }
+main section#proximament .calendario a {
+  color: red;
+  text-decoration: underline;
+}
 main section#cantar ul li {
   list-style-type: square;
   margin-left: 1rem;
