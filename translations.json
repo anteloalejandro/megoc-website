@@ -25,7 +25,7 @@
       "h2": "¿Te gusta cantar?",
       "> p:first-of-type": "MEGóC acepta participantes dos veces al año, antes de ciertos eventos importantes.",
       "> p:nth-of-type(2)": "Para formar parte de MEGòC tienes que enviar-nos por correo electrónico tu educiación musical y hablarnos un poco sobre ti y sobre qué esperas ganar de esta experiencia.",
-      "> p:nth-of-type(3) strong": "Fechas de inscripción",
+      "#inscripcion > p:first-of-type > strong": "Fechas de inscripción",
       "ul": {
         "li:first-of-type": "Del día X de Y al A de B",
         "li:nth-of-type(2)": "Del día X de Y al A de B"
@@ -77,7 +77,7 @@
       "h2": "Do You Like Singing?",
       "> p:first-of-type": "MEGòC accepts new members twice a year, before certain important events",
       "> p:nth-of-type(2)": "To be a part of MEGòC you must send as your musical education and some info about you and what you want to obtain from this experience in an e-mail.",
-      "> p:nth-of-type(3) strong": "Registration dates",
+      "#inscripcion > p:first-of-type > strong": "Registration dates",
       "ul": {
         "li:first-of-type": "From the X of Y until the A of B",
         "li:nth-of-type(2)": "From the X of Y until the A of B"

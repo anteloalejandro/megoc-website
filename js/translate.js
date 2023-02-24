@@ -20,7 +20,7 @@ function getDefault(item, sel = '') {
 
 function apply(item, sel = '') {
   if (!(item instanceof Object)) {
-    console.log(item, sel)
+    // console.table({selector: sel, text: item})
     document.querySelectorAll(sel)
       .forEach(e => {
         e.innerHTML = item
