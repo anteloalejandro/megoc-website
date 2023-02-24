@@ -17,20 +17,23 @@
   }
 }
 
-.tema-btn i {
-  display: block;
-  height: 100%;
-  &::before {
-    content: '';
+.tema-btn {
+  border-radius: 0.5em;
+  i {
     display: block;
-    width: 100%;
     height: 100%;
-    background-image: url('../img/moon.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    .light & {
-      background-image: url('../img/sun.svg');
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/moon.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      .light & {
+        background-image: url('../img/sun.svg');
+      }
     }
   }
 }
