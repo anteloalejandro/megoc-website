@@ -435,7 +435,13 @@ body {
 
 main {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: unset;
+  grid-auto-flow: row;
   gap: 1rem;
+}
+main > * {
+  grid-column: 1/-1;
 }
 main section:first-of-type {
   text-align: center;
@@ -486,6 +492,25 @@ main section#qui-som #redes p {
 main section#qui-som #redes i.fa-square-facebook, main section#qui-som #redes i.fa-instagram {
   display: block;
   margin: auto;
+}
+main section#galeria #group-insc {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  main section#galeria #group-insc {
+    flex-flow: row;
+    gap: 1rem;
+  }
+  main section#galeria #group-insc p {
+    margin: 0;
+    padding: 0;
+  }
+  main section#galeria #group-insc .button {
+    width: fit-content;
+  }
 }
 main section#proximament .calendario {
   display: flex;
@@ -544,14 +569,10 @@ main section#trobans #lugares > * img {
 /**VISTA PC/TABLET**/
 @media screen and (min-width: 768px) {
   main {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: unset;
-    grid-auto-flow: row;
     font-size: 20px;
     padding: 0.5rem;
   }
-  main > * {
-    grid-column: 1/-1;
+  main section {
     border-radius: 0.3rem;
   }
   main section:first-of-type {

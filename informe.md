@@ -15,15 +15,6 @@ toc: true
 - Calendario.
 - Pie de página con la política de privacidad.
 
-# Cosas por acabar
-
-- Añadir más contenido a las secciones.
-- Algún formulario para la inscripción.
-- Detalles del estilo de las secciones, como el formato de los `h2`, `h3`...
-- Poder cambiar el idioma de la página.
-- Hacer que el se escoja automáticamente según la configuración del usuario en su dispositivo, y poder guardar dicha configuración.
-- Pequeñas animaciones para hacer más evidente que se está haciendo y en que sección de la página se está.
-
 # Dificultadas encontradas durante el desarrollo
 
 Animar la sección de navegación desplegable junto a su sombreado se ha complicado porque la altura de su elemento padre, que es el que tiene el sombreado, cambia al instante mientras que la de la propia barra no. Se ha tenido que utilizar JavaScript para crear un temporizador para mover la sombra de un elemento a otro al hacer clic sobre el desplegable.

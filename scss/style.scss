@@ -3,6 +3,7 @@
 @import "partials/init";
 
 @import "partials/classes";
+@import "partials/galeria";
 @import "partials/form";
 @import "partials/header";
 @import "partials/footer";
@@ -17,7 +18,13 @@ body {
 
 main {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: unset;
+  grid-auto-flow: row;
   gap: 1rem;
+  & > * {
+    grid-column: 1/-1;
+  }
   section:first-of-type {
     text-align: center;
   }
@@ -75,6 +82,27 @@ main {
           margin: auto;
         }
       }
+    }
+
+    &#galeria {
+      #group-insc {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width: 768px) {
+          flex-flow: row;
+          gap: 1rem;
+          p {
+            margin: 0;
+            padding: 0;
+          }
+          .button {
+            width: fit-content;
+          }
+        }
+      }
+
     }
 
     &#proximament {
@@ -140,16 +168,10 @@ main {
 /**VISTA PC/TABLET**/
 @media screen and (min-width: 768px) {
   main {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: unset;
-    grid-auto-flow: row;
     font-size: 20px;
     padding: 0.5rem;
-    & > * {
-      grid-column: 1/-1;
-      border-radius: 0.3rem;
-    }
     section {
+      border-radius: 0.3rem;
       &:first-of-type {
         grid-column: 1/5;
         align-self: center;
