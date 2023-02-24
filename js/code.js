@@ -29,11 +29,14 @@ for (el of nav.querySelector('ul').children) {
 const themeBtn = document.getElementsByClassName('tema-btn')
 
 for (b of themeBtn) {
-  b.addEventListener('click', ev => {
+  b.onclick = ev => {
     ev.preventDefault()
+    localStorage.setItem('lightTheme', !(localStorage.getItem('lightTheme') === 'true'))
     document.documentElement.classList.toggle('light')
-  })
+  }
 }
+if (localStorage.getItem('lightTheme') === 'true')
+  document.documentElement.classList.add('light')
 
 const galerias = document.getElementsByClassName('galeria')
 
